@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Allows the app to start Live Activities (study session progress on the Lock Screen / Dynamic Island). -->
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<!-- Custom URL scheme: lets iOS open the app for flashcardsai://... links.
+	     Keep the scheme in sync with DeepLink.scheme. Merged with the generated Info.plist. -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>flashcardsai</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

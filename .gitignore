@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Swift Package Manager / CocoaPods / Carthage
+.build/
+Packages/
+Pods/
+Carthage/Build/
+
+# Secrets & local configuration: never commit real values
+.env
+.env.*
+*.xcconfig
+!Config/*.example.xcconfig
+Secrets.*
+GoogleService-Info.plist
+*.p12
+*.mobileprovision
+*.pem
+
+# Claude Code files (not pushed)
+.claude/
+CLAUDE.md
