@@ -104,13 +104,3 @@ xcodebuild test -project flashcardsai-iOS.xcodeproj -scheme flashcardsai-iOS \
   -destination 'platform=iOS Simulator,name=iPhone 16' -only-testing:flashcardsai-iOSTests
 ```
 
-## Roadmap
-
-- Delete decks from the app
-- Sync scores to the server
-- Account deletion, email verification and password reset (needs backend support)
-- Release configuration with an `https` backend
-
-## License
-
-Add a license of your choice, or remove this section.
