@@ -86,16 +86,6 @@ More detail is in [`DOCUMENTATION.md`](DOCUMENTATION.md) and the [`docs/`](docs)
 3. In **Signing & Capabilities**, choose your own team for the app and the widget targets. Both targets use the App Groups capability, so change the group identifier to one under your account if needed (in `Shared/AppGroup.swift` and both `.entitlements` files).
 4. Run on a simulator or device. Use a signed build so the Keychain works.
 
-### Point the app at the backend
-
-The app contains no API keys. The base URL is resolved in this order:
-
-1. **Debug builds:** the address saved from the login screen (tap the server line, enter an address, save, and relaunch)
-2. Environment variable `API_BASE_URL`
-3. Info.plist key `API_BASE_URL`
-4. **Debug builds:** `http://localhost:8080`
-
-On a real device, use your Mac's local address, for example `http://<your-mac-ip>:8080`. Release builds require an `https` URL.
 
 ### Run the tests
 
